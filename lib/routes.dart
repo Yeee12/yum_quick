@@ -3,12 +3,18 @@ import 'package:yum_quick/core/constants/home.dart';
 import 'package:yum_quick/views/menu%20slide/contact%20us/contact_us.dart';
 import 'package:yum_quick/views/menu%20slide/delivery%20adress/delivery_address.dart';
 import 'package:yum_quick/views/menu%20slide/delivery%20adress/new_address.dart';
+import 'package:yum_quick/views/menu%20slide/faq/faq.dart';
 import 'package:yum_quick/views/menu%20slide/my%20profile/my_profile.dart';
 import 'package:yum_quick/views/menu%20slide/orders/my_orders.dart';
 import 'package:yum_quick/views/menu%20slide/payment/add_card.dart';
 import 'package:yum_quick/views/menu%20slide/payment/payment_method.dart';
+import 'package:yum_quick/views/menu%20slide/settings/notification_settings.dart';
+import 'package:yum_quick/views/menu%20slide/settings/password_settings.dart';
+import 'package:yum_quick/views/menu%20slide/settings/settings.dart';
+import 'package:yum_quick/views/screens/food/food_screen.dart';
 import 'package:yum_quick/views/screens/forget_password.dart';
 import 'package:yum_quick/views/screens/home/home_screen.dart';
+import 'package:yum_quick/views/screens/home/support.dart';
 import 'package:yum_quick/views/screens/onboarding/onboarding1.dart';
 import 'package:yum_quick/views/screens/onboarding/onboarding2.dart';
 import 'package:yum_quick/views/screens/onboarding/onboarding3.dart';
@@ -35,6 +41,12 @@ class AppRoutes {
   static const String paymentMethod = "/payment_method";
   static const String addCard = "/add_card";
   static const String contactUs = "/contact_us";
+  static const String faq = "/faq";
+  static const String settings = "/settings";
+  static const String notificationSettings = "/notification_Settings";
+  static const String passwordSettings = "/password_Settings";
+  static const String support = "/support";
+  static const String food_screen =  "/food_Screen";
 
   static Map<String, WidgetBuilder> getRoutes() {
     return {
@@ -55,6 +67,12 @@ class AppRoutes {
       paymentMethod: (context) => const PaymentMethod(),
       addCard: (context) => const AddCard(),
       contactUs: (context) => const ContactUs(),
+      faq: (context) => const Faq(),
+      settings: (context) => const Settings(),
+      notificationSettings: (context) => const NotificationSettings(),
+      passwordSettings: (context) => const PasswordSettings(),
+      support: (context) => const Support(),
+      food_screen: (context) => const FoodScreen(),
     };
   }
 }
